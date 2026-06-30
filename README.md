@@ -1,6 +1,6 @@
 ## NextJS-API-Prisma-Find
 
-### findMany Operation
+### findMany() Operation
 ![](https://imgur.com/rgQI4cV.png)
 
 ```bash
