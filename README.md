@@ -64,7 +64,7 @@ export async function POST(request: NextRequest) {
 ```
 ---
 
-### find Searching
+### findMany() Search Operation
 ![](https://imgur.com/qaXKmlX.png)
 
 ```bash
