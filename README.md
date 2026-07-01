@@ -64,10 +64,35 @@ export async function POST(request: NextRequest) {
 ```
 ---
 
-### 
-![](.png)
+### find Searching
+![](https://imgur.com/qaXKmlX.png)
 
 ```bash
+import prisma from "@/lib/prisma";
+import { NextRequest, NextResponse } from "next/server";
 
+
+export async function POST(request: NextRequest) {
+    try {
+        
+        const readData = await prisma.post.findMany({
+            where: {
+                content: {
+                    contains: "Fifa"
+                }
+            }
+        });
+
+        return NextResponse.json(
+            {status: "success", message: "Read data successfully", data: readData},
+            {status: 200}
+        )
+    } catch (error) {
+        return NextResponse.json(
+            {status: "failed", message: "Internal server problem"},
+            {status: 500}
+        )
+    }
+}
 ```
 ---
