@@ -253,7 +253,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### 
+### findMany() include relation Operation
 ![](https://imgur.com/gQ1BBkB.png)
 
 ```bash
