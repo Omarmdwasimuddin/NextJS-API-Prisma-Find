@@ -190,7 +190,7 @@ export async function POST(request: NextRequest) {
 ```
 ---
 
-### findFirst() Operation
+### findFirst() orderBy, skip Operation
 ![](https://imgur.com/1zn7nHn.png)
 
 ```bash
