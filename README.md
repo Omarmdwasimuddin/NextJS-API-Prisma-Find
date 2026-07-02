@@ -283,3 +283,36 @@ export async function GET(request: NextRequest) {
 }
 ```
 ---
+
+### findMany() select Operation
+![](https://imgur.com/jEBiZdT.png)
+
+```bash
+import prisma from "@/lib/prisma";
+import { NextRequest, NextResponse } from "next/server";
+
+
+export async function GET(request: NextRequest) {
+    try {
+        
+        const readData = await prisma.user.findMany({
+            select: {
+                id: true,
+                name: true,
+                email: true,
+            }
+        });
+
+        return NextResponse.json(
+            {status: "success", message: "Read data successfully", data: readData},
+            {status: 200}
+        )
+    } catch (error) {
+        return NextResponse.json(
+            {status: "failed", message: "Internal server problem"},
+            {status: 500}
+        )
+    }
+}
+```
+---
