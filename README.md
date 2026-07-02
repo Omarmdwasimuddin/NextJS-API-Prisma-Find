@@ -8,7 +8,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findMany();
@@ -35,7 +35,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findMany({
@@ -72,7 +72,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.post.findMany({
@@ -105,7 +105,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findMany({
@@ -137,7 +137,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findMany({
@@ -171,7 +171,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findFirst();
@@ -198,7 +198,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findFirst({
@@ -230,7 +230,7 @@ import prisma from "@/lib/prisma";
 import { NextRequest, NextResponse } from "next/server";
 
 
-export async function POST(request: NextRequest) {
+export async function GET(request: NextRequest) {
     try {
         
         const readData = await prisma.employee.findUnique({
