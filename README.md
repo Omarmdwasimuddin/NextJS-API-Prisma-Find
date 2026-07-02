@@ -1,4 +1,4 @@
-## NextJS-API-Prisma-Find
+## NextJS API---> Prisma Query Operations
 
 ### findMany() Operation
 ![](https://imgur.com/rgQI4cV.png)
