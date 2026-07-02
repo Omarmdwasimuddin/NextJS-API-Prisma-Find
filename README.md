@@ -1,6 +1,6 @@
 ## NextJS API---> Prisma Query Operations
 
-### findMany() Operation
+### findMany() - Basic Query
 ![](https://imgur.com/rgQI4cV.png)
 
 ```bash
@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findMany() Where & Select Operation
+### findMany() with where and select
 ![](https://imgur.com/fJHV7Ii.png)
 
 ```bash
@@ -64,7 +64,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findMany() Search Operation
+### findMany() with contains Search
 ![](https://imgur.com/qaXKmlX.png)
 
 ```bash
@@ -97,7 +97,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findMany() orderBy Operation
+### findMany() with orderBy
 ![](https://imgur.com/I85n7DG.png)
 
 ```bash
@@ -129,7 +129,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findMany() orderBy, skip, take Operaion
+### findMany() with orderBy, skip, and take
 ![](https://imgur.com/Mht3xOJ.png)
 
 ```bash
@@ -163,7 +163,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findFirst() Operation
+### findFirst() - Basic Query
 ![](https://imgur.com/tkFUIJg.png)
 
 ```bash
@@ -190,7 +190,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findFirst() orderBy, skip Operation
+### findFirst() with orderBy and skip
 ![](https://imgur.com/1zn7nHn.png)
 
 ```bash
@@ -222,7 +222,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findUnique() Operation
+### findUnique() - Query by Unique Field
 ![](https://imgur.com/fxvJTwR.png)
 
 ```bash
@@ -253,7 +253,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findMany() include relation Operation
+### findMany() with include (Relations)
 ![](https://imgur.com/gQ1BBkB.png)
 
 ```bash
@@ -284,7 +284,7 @@ export async function GET(request: NextRequest) {
 ```
 ---
 
-### findMany() select Operation
+### findMany() with select
 ![](https://imgur.com/jEBiZdT.png)
 
 ```bash
