@@ -221,3 +221,34 @@ export async function POST(request: NextRequest) {
 }
 ```
 ---
+
+### findUnique() Operation
+![](https://imgur.com/fxvJTwR.png)
+
+```bash
+import prisma from "@/lib/prisma";
+import { NextRequest, NextResponse } from "next/server";
+
+
+export async function POST(request: NextRequest) {
+    try {
+        
+        const readData = await prisma.employee.findUnique({
+            where: {
+                id: "d86fd1e9-920e-49ee-9c4d-0907699aafc7",
+            }
+        });
+
+        return NextResponse.json(
+            {status: "success", message: "Read data successfully", data: readData},
+            {status: 200}
+        )
+    } catch (error) {
+        return NextResponse.json(
+            {status: "failed", message: "Internal server problem"},
+            {status: 500}
+        )
+    }
+}
+```
+---
